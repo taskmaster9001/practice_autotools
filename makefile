@@ -1,9 +1,4 @@
-CC				= cc
-CFLAGS			= -g
-OUTPUT_OPTION	= -MMD -MP -o $@
-SHARED_LIBRARY_EXTENSION = so
-SHARED_LIBRARY_FLAG		 = -shared
-
+include makefile.config
 SOURCE	= $(wildcard *.c)
 OBJS	= $(SOURCE:.c=.o)
 DEPS	= $(SOURCE:.c=.d)
