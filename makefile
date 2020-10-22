@@ -1,5 +1,9 @@
 CC		= cc
 CFLAGS	= -g
-ex:		ex.o util.o
-		${CC} -o ex ex.o util.o
+
+SOURCE	= ex.c util.c
+OBJS	= $(SOURCE:.c=.o)
+
+ex:		${OBJS}
+		${CC} -o ex ${OBJS}
 util.o:	util.h
