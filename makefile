@@ -7,7 +7,9 @@ OBJS	= $(SOURCE:.c=.o)
 DEPS	= $(SOURCE:.c=.d)
 -include ${DEPS}
 
-ex:		${OBJS}
-		${CC} -o ex ${OBJS}
+libex.a : 	${OBJS}
+		ar cr libex.a ${OBJS}
+
+
 help:
 		-@echo "make ex: make the executable"
