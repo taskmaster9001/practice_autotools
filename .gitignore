@@ -5,3 +5,7 @@ ex
 *.a
 libex
 *.so
+*cache
+config.*
+configure
+makefile.config

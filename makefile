@@ -1,4 +1,5 @@
 include makefile.config
+
 SOURCE	= $(wildcard *.c)
 OBJS	= $(SOURCE:.c=.o)
 DEPS	= $(SOURCE:.c=.d)
