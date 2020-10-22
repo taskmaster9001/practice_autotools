@@ -9,3 +9,5 @@ DEPS	= $(SOURCE:.c=.d)
 
 ex:		${OBJS}
 		${CC} -o ex ${OBJS}
+help:
+		-@echo "make ex: make the executable"
