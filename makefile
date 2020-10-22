@@ -1,7 +1,7 @@
 CC		= cc
 CFLAGS	= -g
 
-SOURCE	= ex.c util.c
+SOURCE	= $(wildcard *.c)
 OBJS	= $(SOURCE:.c=.o)
 
 ex:		${OBJS}
