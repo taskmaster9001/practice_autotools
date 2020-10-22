@@ -7,8 +7,7 @@ OBJS	= $(SOURCE:.c=.o)
 DEPS	= $(SOURCE:.c=.d)
 -include ${DEPS}
 
-libex.a : 	${OBJS}
-		ar cr libex.a ${OBJS}
+libex.a : libex(${OBJS})
 
 
 help:
