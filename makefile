@@ -13,3 +13,14 @@ libex.${SHARED_LIBRARY_EXTENSION}: ${OBJS}
 
 help:
 		-@echo "make ex: make the executable"
+
+clean:
+	-@rm -f ${OBJS}
+	-@rm *.d
+	-@rm *.o
+	-@rm config.*
+	-@rm configure
+	-@rm -rf autom4te.cache
+
+realclean:
+	-@rm libex.so
