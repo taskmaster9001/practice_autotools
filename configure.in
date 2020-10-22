@@ -4,5 +4,9 @@ AC_CHECK_PROGS(CC, [clang, gcc, xlc, icc], [""])
 AC_PROG_CC
 AC_SUBST(CC)
 
+AC_CHECK_HEADERS(string.h)
+AC_CHECK_HEADERS(strings.h)
+
 AC_CONFIG_FILES([makefile.config])
+AC_CONFIG_HEADERS([config.h])
 AC_OUTPUT
