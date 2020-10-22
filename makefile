@@ -1,2 +1,2 @@
-ex: ex.c util.c
-	cc -o ex ex.c util.c
+ex: ex.o util.o
+	cc -o ex ex.o util.o
